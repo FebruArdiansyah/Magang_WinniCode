@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WinniSoccer</title>
+  <link rel="stylesheet" href="stylecss/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="assets/logo.png" alt="WinniCode Logo" class="logo">
+      <h1>Winni<span>Soccer</span></h1>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar-menu" id="navbarMenu">
+      <a href="/">Home</a>
+      <a href="/liganasional.html">Liga Nasional</a>
+      <a href="/ligainternasional.html">Liga Internasional</a>
+      <a href="/timnasional.html">Tim Nasional</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-container">
+        <!-- Banner Kiri -->
+        <div class="main-banner-wrapper">
+          <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
+          <div class="main-banner-track" id="mainBannerTrack">
+            <div class="main-banner-card">
+              <img src="assets/image1.png" alt="Gambar 1" />
+              <div class="main-banner-text">
+                <h2>Judul Berita 1</h2>
+                <p class="author-date">11 Jam yang lalu</p>
+              </div>
+            </div>
+            <div class="main-banner-card">
+              <img src="assets/image.png" alt="Gambar 2" />
+              <div class="main-banner-text">
+                <h2>Judul Berita 2</h2>
+                <p class="author-date">10 Jam yang lalu</p>
+              </div>
+            </div>
+            <div class="main-banner-card">
+              <img src="assets/image.png" alt="Gambar 2" />
+              <div class="main-banner-text">
+                <h2>Judul Berita 2</h2>
+                <p class="author-date">10 Jam yang lalu</p>
+              </div>
+            </div>
+            <div class="main-banner-card">
+              <img src="assets/image.png" alt="Gambar 2" />
+              <div class="main-banner-text">
+                <h2>Judul Berita 2</h2>
+                <p class="author-date">10 Jam yang lalu</p>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+        </div>
+    
+            <!-- Berita Pilihan -->
+<!-- <div class="sidebar">
+  <div class="berita-pilihan-wrapper">
+    <h3>Berita Pilihan</h3>
+    <ul class="berita-pilihan-list">
+      <li class="post-item">
+        <img src="assets/image.png" />
+        <div class="post-text">
+          <div class="post-meta">
+            <span class="badge">Tim Nasional</span>
+            <span class="post-time">3 jam lalu</span>
+          </div>
+          <h4 class="post-title">
+            Ini adalah contoh judul berita yang sangat panjang dan tidak boleh melebarkan card ini
+          </h4>
+          <a href="/detailpage.html">Baca Selengkapnya</a>
+        </div>
+      </li>
+      <li class="post-item">
+        <img src="assets/image.png" />
+        <div class="post-text">
+          <div class="post-meta">
+            <span class="badge">Tim Nasional</span>
+            <span class="post-time">3 jam lalu</span>
+          </div>
+          <h4 class="post-title">
+            Ini adalah contoh judul berita yang sangat panjang dan tidak boleh melebarkan card ini
+          </h4>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+      </li>
+      <li class="post-item">
+        <img src="assets/image.png" />
+        <div class="post-text">
+          <div class="post-meta">
+            <span class="badge">Tim Nasional</span>
+            <span class="post-time">3 jam lalu</span>
+          </div>
+          <h4 class="post-title">
+            Ini adalah contoh judul berita yang sangat panjang dan tidak boleh melebarkan card ini
+          </h4>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+      </li>
+      <li class="post-item">
+        <img src="assets/image.png" />
+        <div class="post-text">
+          <div class="post-meta">
+            <span class="badge">Tim Nasional</span>
+            <span class="post-time">3 jam lalu</span>
+          </div>
+          <h4 class="post-title">
+            Ini adalah contoh judul berita yang sangat panjang dan tidak boleh melebarkan card ini
+          </h4>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+      </li>
+      <li class="post-item">
+        <img src="assets/image.png" />
+        <div class="post-text">
+          <div class="post-meta">
+            <span class="badge">Tim Nasional</span>
+            <span class="post-time">3 jam lalu</span>
+          </div>
+          <h4 class="post-title">
+            Ini adalah contoh judul berita yang sangat panjang dan tidak boleh melebarkan card ini
+          </h4>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+      </li>
+      <li class="post-item">
+        <img src="assets/image.png" />
+        <div class="post-text">
+          <div class="post-meta">
+            <span class="badge">Tim Nasional</span>
+            <span class="post-time">3 jam lalu</span>
+          </div>
+          <h4 class="post-title">
+            Ini adalah contoh judul berita yang sangat panjang dan tidak boleh melebarkan card ini
+          </h4>
+          <a href="#">Baca Selengkapnya</a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div> -->
+        
+    </section>
+
+<!-- Sub-banner Section -->
+<div class="sub-banner">
+  <div class="news-item">
+    <img src="assets/image1.png" alt="Berita 1">
+    <p>Saddil Ramdani Ucapkan Perpisahan dengan Sabah FC, Kode Kembali ke Tanah Air?</p>
+  </div>
+  <div class="news-item">
+    <img src="assets/image.png" alt="Berita 2">
+    <p>AC Milan Kembali Kalah, Sergio Conceicao Murka</p>
+  </div>
+  <div class="news-item">
+    <img src="assets/image1.png" alt="Berita 3">
+    <p>Kunci Sukses Uzbekistan Menjadi Juara Piala Asia U17 2025</p>
+  </div>
+  <div class="news-item">
+    <img src="assets/image.png" alt="Berita 4">
+    <p>Selangor FC Dilaporkan Memantau Eliano Reijnders</p>
+  </div>
+</div>
+
+<!-- Subbanner and Sidebar -->
+<section class="subbanner-and-sidebar">
+  <!-- Kiri: Hot News -->
+  <div class="left-section">
+    <div class="hot-news-wrapper">
+      <h3>Hot News</h3>
+      <div class="line"></div>
+      <div class="hot-news-grid">
+        <div class="hot-news-item">
+          <img src="assets/image.png" alt="berita">
+          <span class="kategori">Liga Nasional</span>
+          <h4 class="judul">Cara Timnas Indonesia Lolos Piala Dunia 2026 menurut pelatih Persib</h4>
+          <p class="waktu">Selasa, 3 Maret 2024</p>
+        </div>
+        <div class="hot-news-item">
+          <img src="assets/image.png" alt="berita">
+          <span class="kategori">Liga Nasional</span>
+          <h4 class="judul">Cara Timnas Indonesia Lolos Piala Dunia 2026 menurut pelatih Persib</h4>
+          <p class="waktu">Selasa, 3 Maret 2024</p>
+        </div>
+        <div class="hot-news-item">
+          <img src="assets/image.png" alt="berita">
+          <span class="kategori">Liga Nasional</span>
+          <h4 class="judul">Cara Timnas Indonesia Lolos Piala Dunia 2026 menurut pelatih Persib</h4>
+          <p class="waktu">Selasa, 3 Maret 2024</p>
+        </div>
+        <div class="hot-news-item">
+          <img src="assets/image.png" alt="berita">
+          <span class="kategori">Liga Nasional</span>
+          <h4 class="judul">Cara Timnas Indonesia Lolos Piala Dunia 2026 menurut pelatih Persib</h4>
+          <p class="waktu">Selasa, 3 Maret 2024</p>
+        </div>
+        <div class="hot-news-item">
+          <img src="assets/image.png" alt="berita">
+          <span class="kategori">Liga Nasional</span>
+          <h4 class="judul">Cara Timnas Indonesia Lolos Piala Dunia 2026 menurut pelatih Persib</h4>
+          <p class="waktu">Selasa, 3 Maret 2024</p>
+        </div>
+        <div class="hot-news-item">
+          <img src="assets/image.png" alt="berita">
+          <span class="kategori">Liga Nasional</span>
+          <h4 class="judul">Cara Timnas Indonesia Lolos Piala Dunia 2026 menurut pelatih Persib</h4>
+          <p class="waktu">Selasa, 3 Maret 2024</p>
+        </div>
+        <!-- Tambahkan item lainnya sesuai kebutuhan -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Kanan: Berita Terkini -->
+  <div class="right-section">
+    <div class="berita-terkini-wrapper">
+      <h3>Berita Terkini</h3>
+      <ul class="berita-terkini-list">
+        <li class="post-item">
+          <img src="assets/image.png" alt="post">
+          <div class="post-text">
+            <h4 class="post-title">Timnas Bungkam Bahrain, Patrick Kluivert lebih baik dari Shin Tae-yong</h4>
+            <div class="post-meta">
+              <span class="badge badge-red">Liga Nasional</span>
+              <span class="post-time">2 jam lalu</span>
+            </div>
+            <p>deskripsi berita deskripsi berita deskripsi berita ....</p>
+            <a href="/detailpage.html">Baca Selengkapnya</a>
+          </div>
+        </li>
+        <li class="post-item">
+          <img src="assets/image.png" alt="post">
+          <div class="post-text">
+            <h4 class="post-title">Timnas Bungkam Bahrain, Patrick Kluivert lebih baik dari Shin Tae-yong</h4>
+            <div class="post-meta">
+              <span class="badge badge-red">Liga Nasional</span>
+              <span class="post-time">2 jam lalu</span>
+            </div>
+            <p>deskripsi berita deskripsi berita deskripsi berita ....</p>
+            <a href="/detailpage.html">Baca Selengkapnya</a>
+          </div>
+        </li>
+        <li class="post-item">
+          <img src="assets/image.png" alt="post">
+          <div class="post-text">
+            <h4 class="post-title">Timnas Bungkam Bahrain, Patrick Kluivert lebih baik dari Shin Tae-yong</h4>
+            <div class="post-meta">
+              <span class="badge badge-red">Liga Nasional</span>
+              <span class="post-time">2 jam lalu</span>
+            </div>
+            <p>deskripsi berita deskripsi berita deskripsi berita ....</p>
+            <a href="/detailpage.html">Baca Selengkapnya</a>
+          </div>
+        </li>
+        <li class="post-item">
+          <img src="assets/image.png" alt="post">
+          <div class="post-text">
+            <h4 class="post-title">Timnas Bungkam Bahrain, Patrick Kluivert lebih baik dari Shin Tae-yong</h4>
+            <div class="post-meta">
+              <span class="badge badge-red">Liga Nasional</span>
+              <span class="post-time">2 jam lalu</span>
+            </div>
+            <p>deskripsi berita deskripsi berita deskripsi berita ....</p>
+            <a href="/detailpage.html">Baca Selengkapnya</a>
+          </div>
+        </li>
+        <!-- Tambahkan item lainnya sesuai kebutuhan -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- Rekomendasi -->
+<div class="recommendation-wrapper">
+  <h3>Rekomendasi untuk Anda</h3>
+  <div class="line-recomendation"></div>
+  <div class="recommendation-grid">
+    <!-- Repeat recommendation-card -->
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+    <a href="/detailpage.html" class="recommendation-card">
+      <img src="assets/image.png" alt="rekomendasi">
+      <div class="card-body-reco">
+        <span class="badge badge-red">Liga Nasional</span>
+        <p class="title">Kembalinya Philippe Coutinho ke Panggung</p>
+        <p class="excerpt">Pemain berbakat ini kembali mencuri perhatian setelah lama absen dari liga utama.</p>
+        <p class="author">Ditulis oleh: Admin</p>
+      </div>
+    </a>
+  </div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Column 1: Links -->
+      <div class="footer-col">
+        <h4>TAUTAN</h4>
+        <p><i class="fa fa-globe"></i> Winnicode</p>
+        <p><i class="fa fa-instagram"></i> Instagram</p>
+      </div>
+
+      <!-- Column 2: Sitemap -->
+      <div class="footer-col">
+        <h4>SITEMAP</h4>
+        <p><a href="#">Beranda</a></p>
+        <p><a href="#">Liga Nasional</a></p>
+        <p><a href="#">Liga Internasional</a></p>
+        <p><a href="#">Tim Nasional</a></p>
+      </div>
+
+      <!-- Column 3: Contact -->
+      <div class="footer-col">
+        <h4>KONTAK KAMI</h4>
+        <p><strong>E-Mail:</strong> winnicodegarudaofficial@gmail.com</p>
+        <p><strong>Call Ce  <p><strong>Alamat (Cabang Bandung):</strong><br>Jl. Asia Afrika No.158, Kb. Pisang, Kec. Sumur Bandung,<br>Kota Bandung, Jawa Barat 40261</p>
+        <p><strong>Alamat (Cabang Yogyakarta):</strong><br>Bantul, Yogyakarta</p>
+        <p><strong>Alamat (Cabang Jakarta):</strong><br>Bekasi, Jawa Barat</p>
+        <p><strong>Administrasi Berkas:</strong><br>Hubungi Admin Telp: +6285159932501</p>
+      </div>
+
+      <!-- Column 4: Logo & Description -->
+      <div class="footer-col logo-col">
+        <div class="logo-wrapper">
+          <img src="assets/logo.png" alt="WinniCode Logo" />
+          <img src="assets/bpd.png" alt="Kampus Merdeka" />
+        </div>
+        <p class="desc">Jurnalistik Program winnicode adalah program pengembangan sumber daya manusia yang ditujukan bagi pemuda pemudi yang berkarir di dunia report.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <hr>
+      <p>&copy; 2025 PT.WINNICODE GARUDA TEKNOLOGI</p>
+    </div>
+  </footer>
+
+  <script src="javascript/javascript.js"></script>
+</body>
+</html>

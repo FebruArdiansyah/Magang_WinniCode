@@ -1,0 +1,102 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.text-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.5;
+  max-height: calc(1.5em * 2);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+ /* Badge customization */
+ .badge.bg-danger {
+  background-color: #e53935 !important;
+  margin-bottom: 10px;
+}
+
+/* Navbar branding */
+.navbar-brand span {
+  color: #525CEB;
+}
+
+.navbar-brand{
+  margin-left: 100px;
+}
+
+.navbar-brand h1{
+  color: #FF66C4;
+}
+
+.nav-menu .nav-link {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #ccc;
+  position: relative;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  padding-left: 0.75rem;
+padding-right: 0.75rem;
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link.active {
+  color: #fff;
+}
+
+.nav-menu .nav-link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-menu .nav-link:hover::after,
+.nav-menu .nav-link.active::after {
+  width: 100%;
+}
+
+form[role="search"] input {
+  width: 100%;
+}
+
+.form-control{
+  margin-right: 100px;
+}
+
+
+/* Mobile layout fix */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+
+  .nav-menu {
+    margin-bottom: 1rem;
+  }
+
+  form[role="search"] {
+    margin-top: 0.5rem;
+  }
+}
+
+
+
+
+
+
+
+

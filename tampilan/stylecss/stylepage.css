@@ -1,0 +1,237 @@
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Navbar branding */
+  .navbar-brand span {
+    color: #525CEB;
+  }
+
+  .navbar-brand h1{
+    color: #FF66C4;
+  }
+
+  .navbar-brand{
+    margin-left: 100px;
+  }
+
+  .nav-menu .nav-link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #ccc;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  }
+  
+  .nav-menu .nav-link:hover,
+  .nav-menu .nav-link.active {
+    color: #fff;
+  }
+  
+  .nav-menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .nav-menu .nav-link:hover::after,
+  .nav-menu .nav-link.active::after {
+    width: 100%;
+  }
+
+  form[role="search"] input {
+    width: 100%;
+  }
+
+  .form-control{
+    margin-right: 100px;
+  }
+  
+  
+  /* Mobile layout fix */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding-top: 1rem;
+    }
+  
+    .nav-menu {
+      margin-bottom: 1rem;
+    }
+  
+    form[role="search"] {
+      margin-top: 0.5rem;
+    }
+  }
+  
+
+  
+   /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+        /* Section Banner */
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+
+  /* Carousel text overlay */
+  .section-banner .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: auto;
+    text-align: left;
+    padding: 0;
+    background: none; /* Pastikan tidak ada latar */
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .section-banner .carousel-inner img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Styling untuk tabel klasemen */
+  .table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  /* Warna header tabel */
+  .table th {
+    background-color: #2d6a4f; /* Warna hijau */
+    color: white;
+  }
+
+  /* Styling untuk baris ganjil */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+  }
+
+  /* Menambahkan padding dan border pada tabel */
+  .table-bordered {
+    border: 2px solid #dee2e6;
+  }
+
+  /* Menata tombol Selengkapnya */
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+  /* Berita Pilihan sidebar styling */
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+
+  /* Untuk kontainer scroll */
+.section-pilihan ul {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 0;
+  }
+  
+  /* Untuk judul berita */
+  .news-title {
+    font-size: 14px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Supaya gambar & teks tidak terlalu dempet */
+  .section-pilihan li {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Tambahan opsional: Hilangkan border di item terakhir */
+  .section-pilihan li:last-child {
+    border-bottom: none;
+  }
+
+  .sub-banner-card {
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.5rem;
+  }
+  
+  .sub-banner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .sub-banner-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .sub-banner-card:hover img {
+    transform: scale(1.03); /* efek zoom ringan */
+  }
+  
+
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+  /* Berita Terkini sidebar styling */
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+
+  .text-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.5;
+    max-height: calc(1.5em * 2);
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+
+  /* Badge customization */
+  .badge.bg-danger {
+    background-color: #e53935 !important;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  footer p, footer a {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ccc;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .carousel-caption h5 {
+      font-size: 16px;
+    }
+  
+    .carousel-caption p {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,160 @@
+/* Navbar branding */
+  .navbar-brand span {
+    color: #525CEB;
+  }
+
+  .navbar-brand h1{
+    color: #FF66C4;
+  }
+
+  .navbar-brand{
+    margin-left: 100px;
+  }
+
+  .nav-menu .nav-link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #ccc;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  }
+  
+  .nav-menu .nav-link:hover,
+  .nav-menu .nav-link.active {
+    color: #fff;
+  }
+  
+  .nav-menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .nav-menu .nav-link:hover::after,
+  .nav-menu .nav-link.active::after {
+    width: 100%;
+  }
+
+  form[role="search"] input {
+    width: 100%;
+  }
+
+  .form-control{
+    margin-right: 100px;
+  }
+  
+  
+  /* Mobile layout fix */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding-top: 1rem;
+    }
+  
+    .nav-menu {
+      margin-bottom: 1rem;
+    }
+  
+    form[role="search"] {
+      margin-top: 0.5rem;
+    }
+  }
+
+
+
+
+
+/*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+        /* LIGA NASIONAL */
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+
+.hover-shadow:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.desc-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Batasi hingga 4 baris */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.berita-terkini p.fw-semibold {
+    font-size: 14px;
+}
+
+.label-overlay {
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom-right-radius: 8px;
+  }
+
+  .border-line {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    background-color: #e60023;
+    border-radius: 2px;
+  }
+
+
+
+  
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+  /* Berita Terkini sidebar styling */
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+
+  .text-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.5;
+    max-height: calc(1.5em * 2);
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+
+  /* Badge customization */
+  .badge.bg-danger {
+    background-color: #e53935 !important;
+    margin-bottom: 10px;
+  }
+
+
+  .sub-banner-card {
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.5rem;
+  }
+  
+  .sub-banner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .sub-banner-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .sub-banner-card:hover img {
+    transform: scale(1.03); /* efek zoom ringan */
+  }
+  
+

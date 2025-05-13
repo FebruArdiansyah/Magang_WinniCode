@@ -1,16 +1,24 @@
-// Ambil semua link di navbar menu
-const menuLinks = document.querySelectorAll('.navbar-menu a');
+document.addEventListener("DOMContentLoaded", function () {
+  console.log('Navbar script loaded'); // Tes apakah script dijalankan
 
-// Tambahkan event listener untuk masing-masing link
-menuLinks.forEach(link => {
-  link.addEventListener('click', function () {
-    // Hapus class 'active' dari semua link
-    menuLinks.forEach(item => item.classList.remove('active'));
-    
-    // Tambahkan class 'active' ke link yang diklik
-    this.classList.add('active');
+  const currentPath = window.location.pathname;
+  console.log('Current Path:', currentPath); // Tes path saat ini
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+    console.log('Checking link:', linkPath); // Tes semua link
+
+    const isRoot = (linkPath === '/' && (currentPath === '/' || currentPath === '/index.html'));
+
+    if (linkPath === currentPath || isRoot) {
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      console.log('Active set on:', link.textContent.trim()); // Konfirmasi siapa yang aktif
+    }
   });
 });
+
+
 
 const hamburger = document.getElementById("hamburger");
   const navbarMenu = document.getElementById("navbarMenu");

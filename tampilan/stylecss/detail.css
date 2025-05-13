@@ -78,20 +78,121 @@ body {
   }
   
   
-  /* Mobile layout fix */
-  @media (max-width: 991.98px) {
-    .navbar-collapse {
-      padding-top: 1rem;
-    }
-  
-    .nav-menu {
-      margin-bottom: 1rem;
-    }
-  
-    form[role="search"] {
-      margin-top: 0.5rem;
-    }
+  /* Perbaiki posisi logo dan toggle di mobile */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+     margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+/* Tetap biarkan logo di kiri */
+  .navbar .navbar-brand img {
+    position: absolute;
+    left: 1rem;
+    transform: none;
+  }
+  .navbar-toggler {
+    margin-right: 0 !important;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar .container-fluid {
+   justify-content: center !important;
+    position: relative;
+  }
+
+  .nav-menu {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Rapi saat menu terbuka */
+  .navbar-collapse {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Hapus border terakhir */
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  form[role="search"] {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .form-control {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+/* 1. Atur layout agar stacked di mobile */
+@media (max-width: 991.98px) {
+  /* Section atas: Artikel dan Terpopuler */
+  .container.d-flex.flex-wrap {
+    flex-direction: column;
+  }
+
+  .container.d-flex.flex-wrap > * {
+    width: 100% !important;
+  }
+
+  /* Rekomendasi dan Terpopuler Section */
+  .section-hot-news-terkini .col-lg-8,
+  .section-hot-news-terkini .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .section-hot-news-terkini .col-lg-4 {
+    margin-top: 2rem;
+  }
+}
+
+/* 2. Atur grid cards menjadi 2 kolom di tablet dan 1 kolom di mobile */
+@media (max-width: 991.98px) {
+  .section-hot-news .row-cols-md-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-hot-news .row-cols-md-3 {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  /* Sub-banner satu kolom di mobile */
+  .section-sub-banner .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* 3. Rapi gambar agar tidak pecah di semua ukuran */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 4. Jarak antar kartu di mobile */
+@media (max-width: 767.98px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
 
 
   .list-group-item {

@@ -99,64 +99,7 @@
 }
 
   
-/* Perbaiki posisi logo dan toggle di mobile */
-@media (max-width: 767.98px) {
-  .navbar-brand {
-     margin: 0 auto !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-/* Tetap biarkan logo di kiri */
-  .navbar .navbar-brand img {
-    position: absolute;
-    left: 1rem;
-    transform: none;
-  }
-  .navbar-toggler {
-    margin-right: 0 !important;
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 
-  .navbar .container-fluid {
-   justify-content: center !important;
-    position: relative;
-  }
-
-  .nav-menu {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  /* Rapi saat menu terbuka */
-  .navbar-collapse {
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  /* Hapus border terakhir */
-  .navbar-nav .nav-link:last-child {
-    border-bottom: none;
-  }
-  
-  form[role="search"] {
-    margin-top: 0.5rem;
-    width: 100%;
-  }
-
-  .form-control {
-    margin-right: 0;
-    width: 100%;
-  }
-}
 
 @media (max-width: 991.98px) {
   .section-banner .col-lg-8,

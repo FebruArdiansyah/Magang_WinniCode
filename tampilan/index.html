@@ -19,16 +19,21 @@
       <!-- Logo (Kiri) -->
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="assets/logo.png" alt="Logo" width="36" class="me-2">
-        <span class="text-uppercase text-pink fw-bold mb-0 d-none d-sm-inline">Winni<span class="text-primary">Soccer</span></span>
+        <span class="text-uppercase text-pink fw-bold mb-0">Winni<span class="text-primary">Soccer</span></span>
       </a>
   
-      <!-- Toggle Button (untuk mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+      <span class="navbar-toggler-icon"></span>
       </button>
+
+      <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
   
       <!-- Navbar content -->
-      <div class="collapse navbar-collapse" id="navbarMain">
+      <div class="offcanvas-body" id="navbarMain">
         <!-- Menu (Tengah) -->
         <ul class="navbar-nav mx-auto nav-menu">
           <li class="nav-item"><a class="nav-link" href="/">News</a></li>

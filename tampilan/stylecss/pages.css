@@ -54,20 +54,159 @@
   }
   
   
-  /* Mobile layout fix */
-  @media (max-width: 991.98px) {
-    .navbar-collapse {
-      padding-top: 1rem;
-    }
-  
-    .nav-menu {
-      margin-bottom: 1rem;
-    }
-  
-    form[role="search"] {
-      margin-top: 0.5rem;
-    }
+   /* Perbaiki posisi logo dan toggle di mobile */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+     margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+/* Tetap biarkan logo di kiri */
+  .navbar .navbar-brand img {
+    position: absolute;
+    left: 1rem;
+    transform: none;
+  }
+  .navbar-toggler {
+    margin-right: 0 !important;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar .container-fluid {
+   justify-content: center !important;
+    position: relative;
+  }
+
+  /* Rapi saat menu terbuka */
+  .navbar-collapse {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Hapus border terakhir */
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+}
+
+  
+/* Perbaiki posisi logo dan toggle di mobile */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+     margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* Tetap biarkan logo di kiri */
+  .navbar .navbar-brand img {
+    position: absolute;
+    left: 1rem;
+    transform: none;
+  }
+  .navbar-toggler {
+    margin-right: 0 !important;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar .container-fluid {
+   justify-content: center !important;
+    position: relative;
+  }
+
+  .nav-menu {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Rapi saat menu terbuka */
+  .navbar-collapse {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Hapus border terakhir */
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  form[role="search"] {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .form-control {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-banner .col-lg-8,
+  .section-banner .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .section-banner {
+    flex-direction: column;
+  }
+
+  .section-sub-banner .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-sub-banner .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-hot-news-terkini .col-lg-8,
+  .section-hot-news-terkini .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .content .row {
+    flex-direction: column;
+  }
+
+  .content .col-lg-7,
+  .content .col-lg-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
 
    /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
   /* SUB BANNER*/

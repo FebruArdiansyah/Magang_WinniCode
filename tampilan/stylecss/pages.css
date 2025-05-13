@@ -69,6 +69,40 @@
     }
   }
 
+   /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+  /* SUB BANNER*/
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+
+  .sub-banner-card img {
+    width: 100%;
+    height: 180px;  /* Set a fixed height */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the container */
+     transition: transform 0.3s ease-in-out;
+}
+
+.sub-banner-card img:hover {
+    transform: scale(1.05);  /* Zoom effect when hovered */
+}
+
+/* Additional styling for smooth appearance */
+.sub-banner-card p {
+    transition: transform 0.3s ease-in-out;
+}
+
+.sub-banner-card:hover p {
+    transform: translateY(-2px);  /* Slight movement effect on hover */
+}
+/* Add fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
 
 
 
@@ -77,45 +111,58 @@
         /* LIGA NASIONAL */
   /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
 
-.hover-shadow:hover {
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
-}
+ /* Adjust the height of the main image on the left side */
+  .card-img-top {
+    height: 400px; /* Slightly reduce the image size */
+    object-fit: cover;
+  }
 
-.desc-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* Batasi hingga 4 baris */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  /* Make sure the card body grows evenly */
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
 
-.berita-terkini p.fw-semibold {
+  .card-body {
+    flex-grow: 1;
+  }
+
+  /* Card title formatting */
+  .card-title {
     font-size: 14px;
+    font-weight: bold;
+  }
+
+  .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.label-overlay {
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.6);
-    border-bottom-right-radius: 8px;
-  }
-
-  .border-line {
-    display: inline-block;
-    width: 4px;
-    height: 18px;
-    background-color: #e60023;
-    border-radius: 2px;
-  }
-
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1);
+}
 
 
   
-  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
-  /* Berita Terkini sidebar styling */
-  /*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+  /* Style for the "Read More" button */
+  .btn-link {
+    color: #007bff;
+    font-size: 12px;
+  }
 
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Adjust the column layout for better spacing */
+  .col-lg-6, .col-lg-5 {
+    margin-bottom: 15px;
+  }
   .text-clamp-1 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -135,26 +182,4 @@
     background-color: #e53935 !important;
     margin-bottom: 10px;
   }
-
-
-  .sub-banner-card {
-    display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 0.5rem;
-  }
   
-  .sub-banner-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-  }
-  
-  .sub-banner-card img {
-    transition: transform 0.3s ease;
-  }
-  
-  .sub-banner-card:hover img {
-    transform: scale(1.03); /* efek zoom ringan */
-  }
-  
-

@@ -81,10 +81,6 @@
     position: relative;
   }
 
-  .nav-menu {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
 
   /* Rapi saat menu terbuka */
   .navbar-collapse {
@@ -121,6 +117,27 @@
   .section-banner .col-lg-4 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  #mainBannerCarousel .carousel-item img {
+    width: 100%;      /* Membuat gambar menyesuaikan lebar container */
+    height: 250px;    /* Menetapkan tinggi gambar di mobile (sesuaikan sesuai kebutuhan) */
+    object-fit: cover;  /* Memastikan gambar tetap proporsional dan mengisi kontainer */
+  }
+
+  .carousel-caption {
+    margin-right: 0px;   /* Memberikan jarak di kanan */
+    margin-left: 5px;    /* Memberikan jarak di kiri jika diperlukan */
+    text-align: left;      /* Menjaga teks tetap rata kiri */
+  }
+
+  /* Membatasi teks agar tidak terlalu melebar */
+  .carousel-caption h5 {
+    font-size: 1.2rem; /* Menyesuaikan ukuran font */
+  }
+
+  .carousel-caption small {
+    font-size: 0.9rem; /* Menyesuaikan ukuran font kecil */
   }
 
   .section-banner {

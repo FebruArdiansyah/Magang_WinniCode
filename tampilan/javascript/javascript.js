@@ -53,6 +53,17 @@ function updateSlide() {
   track.style.transform = `translateX(-${cardWidth * index}px)`;
 }
 
+// Ambil elemen offcanvas
+const offcanvasElement = document.getElementById('offcanvasMenu');
 
+// Ketika offcanvas dibuka
+offcanvasElement.addEventListener('show.bs.offcanvas', function () {
+  document.body.classList.add('offcanvas-open');
+});
+
+// Ketika offcanvas ditutup
+offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
+  document.body.classList.remove('offcanvas-open');
+});
 
 

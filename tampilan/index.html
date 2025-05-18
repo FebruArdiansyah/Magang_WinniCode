@@ -26,7 +26,7 @@
       <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasMenu" data-bs-backdrop="false">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title">Menu</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
@@ -45,7 +45,7 @@
         </ul>
   
         <!-- Search (Kanan) -->
-        <form class="d-none d-lg-flex" role="search" style="min-width: 200px;">
+        <form class="d-block d-lg-flex" role="search" style="min-width: 200px;">
           <input class="form-control form-control-sm" type="search" placeholder="Cari berita..." aria-label="Search">
         </form>
       </div>
@@ -205,186 +205,155 @@
     </div>
   </section>
 
-  <!-- SECTION 3: Hot News & Berita Terkini -->
-  <section class="section-hot-news-terkini row mb-5">
-   <div class="col-lg-8 section-hot-news">
-  <h3 class="mb-3">Rekomendasi Untuk Anda</h3>
-  <hr>
-
-  <div class="row row-cols-1 row-cols-md-3 g-3">
-    <!-- Card 1 -->
-    <div class="col">
-      <a href="detail.page" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <small class="text-muted">Liga Nasional</small>
-            <h6 class="card-title fw-bold mb-2">
-              Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026
-            </h6>
-            <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
-          </div>
+  <section class="layout-rekomendasi section-rekomendasi-anda row mb-5">
+    <div class="col-lg-8 rekomendasi-anda">
+      <h3 class="text-center text-lg-start mb-3">Rekomendasi Untuk Anda</h3>
+      <hr class="mx-auto mx-lg-0" style="width: 330px; border-top: 2px solid #FFB800;">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <a href="detail.page" class="text-decoration-none text-dark">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/image.png" class="card-img-top img-fluid" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <small class="text-muted">Liga Nasional</small>
+                <h6 class="card-title fw-bold mb-2 card-title-limit">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+                <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col">
-      <a href="detail.page" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <small class="text-muted">Liga Nasional</small>
-            <h6 class="card-title fw-bold mb-2">
-              Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026
-            </h6>
-            <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
-          </div>
+        <div class="col">
+          <a href="detail.page" class="text-decoration-none text-dark">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/image.png" class="card-img-top img-fluid" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <small class="text-muted">Liga Nasional</small>
+                <h6 class="card-title fw-bold mb-2 card-title-limit">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+                <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col">
-      <a href="detail.page" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <small class="text-muted">Liga Nasional</small>
-            <h6 class="card-title fw-bold mb-2">
-              Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026
-            </h6>
-            <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
-          </div>
+        <div class="col">
+          <a href="detail.page" class="text-decoration-none text-dark">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/image.png" class="card-img-top img-fluid" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <small class="text-muted">Liga Nasional</small>
+                <h6 class="card-title fw-bold mb-2 card-title-limit">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+                <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-
-    <div class="col">
-      <a href="detail.page" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <small class="text-muted">Liga Nasional</small>
-            <h6 class="card-title fw-bold mb-2">
-              Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026
-            </h6>
-            <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
-          </div>
+        <div class="col">
+          <a href="detail.page" class="text-decoration-none text-dark">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/image.png" class="card-img-top img-fluid" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <small class="text-muted">Liga Nasional</small>
+                <h6 class="card-title fw-bold mb-2 card-title-limit">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+                <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-
-    <div class="col">
-      <a href="detail.page" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <small class="text-muted">Liga Nasional</small>
-            <h6 class="card-title fw-bold mb-2">
-              Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026
-            </h6>
-            <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
-          </div>
+        <div class="col">
+          <a href="detail.page" class="text-decoration-none text-dark">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/image.png" class="card-img-top img-fluid" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <small class="text-muted">Liga Nasional</small>
+                <h6 class="card-title fw-bold mb-2 card-title-limit">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+                <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-
-    <div class="col">
-      <a href="detail.page" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <small class="text-muted">Liga Nasional</small>
-            <h6 class="card-title fw-bold mb-2">
-              Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026
-            </h6>
-            <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
-          </div>
+        <div class="col">
+          <a href="detail.page" class="text-decoration-none text-dark">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/image.png" class="card-img-top img-fluid" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <small class="text-muted">Liga Nasional</small>
+                <h6 class="card-title fw-bold mb-2 card-title-limit">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+                <small class="text-muted d-block mb-1">Oleh: Admin Berita</small>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Selasa, 3 Maret 2024</small>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+        
+        <!-- Tambahkan card lain jika perlu -->
+      </div>
     </div>
-  </div>
-</div>
 
     <div class="col-lg-4 section-terpopuler">
-  <h3 class="mb-3 fw-bold">Terpopuler</h3>
-  <div class="border-bottom border-danger mb-3" style="width: 60px;"></div>
-
-  <div class="list-group list-group-flush">
-
-    <!-- ITEM 1 -->
-    <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
-      <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
-      <div>
-        <small class="text-danger fw-semibold">Liga Inggris</small>
-        <h6 class="fw-bold mb-1">Jadwal timnas Indonesia di perempat final Piala Asia Futsal Putri</h6>
-        <small class="text-muted">21 jam lalu</small>
+      <h3 class="mb-3 fw-bold">Terpopuler</h3>
+      <hr class="mx-auto mx-lg-0" style="width: 330px; border-top: 2px solid #FFB800;">
+      <div class="list-group list-group-flush">
+        <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
+          <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
+          <div>
+            <small class="text-danger fw-semibold">Liga Inggris</small>
+            <h6 class="fw-bold mb-1">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+            <small class="text-muted">21 jam lalu</small>
+          </div>
+        </a>
+        <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
+          <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
+          <div>
+            <small class="text-danger fw-semibold">Liga Inggris</small>
+            <h6 class="fw-bold mb-1">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+            <small class="text-muted">21 jam lalu</small>
+          </div>
+        </a>
+        <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
+          <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
+          <div>
+            <small class="text-danger fw-semibold">Liga Inggris</small>
+            <h6 class="fw-bold mb-1">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+            <small class="text-muted">21 jam lalu</small>
+          </div>
+        </a>
+        <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
+          <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
+          <div>
+            <small class="text-danger fw-semibold">Liga Inggris</small>
+            <h6 class="fw-bold mb-1">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+            <small class="text-muted">21 jam lalu</small>
+          </div>
+        </a>
+        <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
+          <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
+          <div>
+            <small class="text-danger fw-semibold">Liga Inggris</small>
+            <h6 class="fw-bold mb-1">Home Timnas Ketum PSSI Erick Thohir Pastikan Indonesia Bidding Tuan Rumah Putaran Keempat Kualifikasi Piala Dunia 2026</h6>
+            <small class="text-muted">21 jam lalu</small>
+          </div>
+        </a>
+        <!-- Tambahkan item lain jika perlu -->
       </div>
-    </a>
-
-    <!-- ITEM 2 -->
-    <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
-      <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
-      <div>
-        <small class="text-danger fw-semibold">Liga Italia</small>
-        <h6 class="fw-bold mb-1">Venezia keluar dari zona degradasi, kalahkan Fiorentina 2-1</h6>
-        <small class="text-muted">10 jam lalu</small>
-      </div>
-    </a>
-
-    <!-- ITEM 3 -->
-    <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
-      <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
-      <div>
-        <small class="text-danger fw-semibold">Liga Nasional</small>
-        <h6 class="fw-bold mb-1">Klasemen akhir Piala Asia Futsal Putri 2025</h6>
-        <small class="text-muted">21 jam lalu</small>
-      </div>
-    </a>
-
-    <!-- ITEM 4 -->
-    <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
-      <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
-      <div>
-        <small class="text-danger fw-semibold">Liga Jerman</small>
-        <h6 class="fw-bold mb-1">Van Dijk sebut para pemain Liverpool kecewa dengan keputusan Arnold</h6>
-        <small class="text-muted">14 jam lalu</small>
-      </div>
-    </a>
-
-    <!-- ITEM 5 -->
-    <a href="detail.page" class="list-group-item list-group-item-action d-flex gap-3 border-0 px-0 pb-3">
-      <img src="assets/image1.png" width="100" height="70" class="rounded object-fit-cover" alt="...">
-      <div>
-        <small class="text-danger fw-semibold">Liga Jerman</small>
-        <h6 class="fw-bold mb-1">Van Dijk sebut para pemain Liverpool kecewa dengan keputusan Arnold</h6>
-        <small class="text-muted">14 jam lalu</small>
-      </div>
-    </a>
-
-  </div>
-</div>
-
+    </div>
   </section>
+  
 
 
 </main>

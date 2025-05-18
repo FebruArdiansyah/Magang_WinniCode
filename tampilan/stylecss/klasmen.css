@@ -1,87 +1,230 @@
+ .navbar-brand span {
+    color: #525CEB;
+  }
+
+  .navbar-brand h1{
+    color: #FF66C4;
+  }
+
+  .navbar-brand{
+    margin-left: 100px;
+  }
+
+  .nav-menu .nav-link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #ccc;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  }
+  
+  .nav-menu .nav-link:hover,
+  .nav-menu .nav-link.active {
+    color: #fff;
+  }
+  
+  .nav-menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .nav-menu .nav-link:hover::after,
+  .nav-menu .nav-link.active::after {
+    width: 100%;
+  }
+
+  form[role="search"] input {
+    width: 100%;
+  }
+
+  .form-control{
+    margin-right: 100px;
+  }
+  
+
+  /* Perbaiki posisi logo dan toggle di mobile */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+     margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* Tetap biarkan logo di kiri */
+  .navbar .navbar-brand img {
+    position: absolute;
+    left: 1rem;
+    transform: none;
+  }
+  .navbar-toggler {
+    margin-right: 0 !important;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar .container-fluid {
+   justify-content: center !important;
+    position: relative;
+  }
 
 
-        #team-name {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            font-weight: bold;
-            animation: fadeIn 1s ease-out;
-        }
+  /* Rapi saat menu terbuka */
+  .navbar-collapse {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 
-        #team-info {
-            color: #34495e;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            animation: fadeIn 1.5s ease-out;
-        }
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-        /* Styling untuk tabel */
-        table {
-            margin-top: 30px;
-            animation: fadeIn 2s ease-out;
-            border-radius: 10px;
-            width: 100%;
-            overflow: hidden;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
+  /* Hapus border terakhir */
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  form[role="search"] {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
 
-        table th, table td {
-            padding: 12px 18px;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 1.1rem;
-        }
+  .form-control {
+    margin-right: 0;
+    width: 100%;
+  }
+}
 
-        table th {
-            background-color: #27ae60;
-            color: white;
-            font-weight: bold;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
 
-        table td {
-            background-color: #f9f9f9;
-            border-bottom: 1px solid #ddd;
-        }
+/* Default: Tampilkan normal di desktop */
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-        /* Hover Effect pada baris tabel */
-        table tbody tr:hover {
-            background-color: #ecf0f1;
-            cursor: pointer;
-            transform: scale(1.02);
-            transition: all 0.2s ease-in-out;
-        }
 
-        table tbody tr:nth-child(even) {
-            background-color: #fafafa;
-        }
+#team-name {
+      color: #0B2447;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-out;
+    }
 
-        /* Tombol "Kembali" */
-        .btn-primary {
-            background-color: #27ae60;
-            border: none;
-            font-size: 1rem;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
+    #team-info {
+      color: #34495e;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease-out;
+    }
 
-        .btn-primary:hover {
-            background-color: #2ecc71;
-            transform: scale(1.05);
-        }
+    .table-container {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 20px;
+      animation: fadeIn 2s ease-out;
+    }
 
-        /* Animasi Fade-in */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    .table-container table {
+    min-width: 600px;
+    }
+
+    table th {
+      background-color: #0B2447;
+      color: #FFB800;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    table td {
+      text-align: center;
+      background-color: #ffffff;
+      border-bottom: 1px solid #f1f1f1;
+      font-size: 1.1rem;
+    }
+
+    table tbody tr:first-child {
+      background-color: #FFF8E1;
+      font-weight: bold;
+    }
+
+    table tbody tr:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.01);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn-primary {
+      background-color: #0B2447;
+      color: #FFB800;
+      border: 2px solid #FFB800;
+      width: 100%;
+      padding: 12px;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      margin-top: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #FFB800;
+      color: #0B2447;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 767.98px) {
+  #team-name {
+    font-size: 1.8rem;
+  }
+  #team-info {
+    font-size: 0.95rem;
+  }
+  table th, table td {
+    font-size: 0.75rem;
+    padding: 5px;
+  }
+
+  .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-tabs .nav-item {
+    flex: 1 1 50%; /* 2 kolom per baris, bisa diubah jadi 20% untuk 5 tab */
+    text-align: center;
+  }
+
+  .nav-tabs .nav-link {
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 0.85rem;
+  }
+}
+
 
         /* Footer */
   footer h5 {

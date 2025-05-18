@@ -54,7 +54,33 @@ function updateSlide() {
 }
 
 
+ const ligaLinks = document.querySelectorAll('.nav-link');
 
+  ligaLinks.forEach(link => {
+    link.addEventListener('shown.bs.tab', function (event) {
+      // Update Title dan Info
+      const targetTab = event.target.getAttribute('href');
+      const title = event.target.dataset.title;
+      const info = event.target.dataset.info;
 
+      const tabPane = document.querySelector(targetTab);
+      const titleEl = tabPane.querySelector('.team-name');
+      const infoEl = tabPane.querySelector('.team-info');
+
+      if (titleEl && infoEl) {
+        titleEl.textContent = title;
+        infoEl.textContent = info;
+      }
+    });
+  });
+
+  // Set default ke Liga Nasional jika tidak ada hash di URL
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!location.hash) {
+      const defaultTab = document.querySelector('.nav-link[href="#liga-nasional"]');
+      const tab = new bootstrap.Tab(defaultTab);
+      tab.show();
+    }
+  });;
 
 

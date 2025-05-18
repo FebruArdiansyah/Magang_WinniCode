@@ -56,218 +56,140 @@
 <!-- Main Content -->
 <main class="container py-5">
  <div class="container mt-4">
-        <!-- Tabs untuk memilih kategori liga -->
-        <ul class="nav nav-tabs" id="ligaTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="liga-nasional-tab" data-bs-toggle="tab" href="#liga-nasional" role="tab" aria-controls="liga-nasional" aria-selected="true">Liga Nasional</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="liga-italia-tab" data-bs-toggle="tab" href="#liga-italia" role="tab" aria-controls="liga-italia" aria-selected="false">Liga Italia</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="liga-inggris-tab" data-bs-toggle="tab" href="#liga-inggris" role="tab" aria-controls="liga-inggris" aria-selected="false">Liga Inggris</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="liga-jerman-tab" data-bs-toggle="tab" href="#liga-jerman" role="tab" aria-controls="liga-jerman" aria-selected="false">Liga Jerman</a>
-            </li>
-        </ul>
+  <!-- Tabs -->
+  <ul class="nav nav-tabs" id="ligaTabs" role="tablist">
+    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#liga-nasional" data-title="Liga Nasional" data-info="Klasemen Liga Nasional">Liga Nasional</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#liga-spanyol" data-title="Liga Spanyol" data-info="Klasemen Liga Spanyol">Liga Spanyol</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#liga-inggris" data-title="Liga Inggris" data-info="Klasemen Liga Inggris">Liga Inggris</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#liga-jerman" data-title="Liga Jerman" data-info="Klasemen Liga Jerman">Liga Jerman</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#liga-italia" data-title="Liga Italia" data-info="Klasemen Liga Italia">Liga Italia</a></li>
+  </ul>
 
-        <!-- Tab Content -->
-        <div class="tab-content mt-3" id="ligaTabsContent">
-            <div class="tab-pane fade show active" id="liga-nasional" role="tabpanel" aria-labelledby="liga-nasional-tab">
-                <h3 class="text-center" id="team-name">Liga Nasional</h3>
-                <p id="team-info">Klasemen Liga Nasional</p>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Posisi</th>
-                            <th>Nama Klub</th>
-                            <th>Jumlah Pertandingan</th>
-                            <th>Menang</th>
-                            <th>Seri</th>
-                            <th>Kalah</th>
-                            <th>Selisih Gol</th>
-                            <th>Poin</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>PERSIB Bandung</td>
-                            <td>27</td>
-                            <td>16</td>
-                            <td>9</td>
-                            <td>2</td>
-                            <td>23</td>
-                            <td>57</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane fade" id="liga-italia" role="tabpanel" aria-labelledby="liga-italia-tab">
-                <h3 class="text-center" id="team-name">Liga Italia</h3>
-                <p id="team-info">Klasemen Liga Italia</p>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Posisi</th>
-                            <th>Nama Klub</th>
-                            <th>Jumlah Pertandingan</th>
-                            <th>Menang</th>
-                            <th>Seri</th>
-                            <th>Kalah</th>
-                            <th>Selisih Gol</th>
-                            <th>Poin</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Inter Milan</td>
-                            <td>30</td>
-                            <td>20</td>
-                            <td>6</td>
-                            <td>4</td>
-                            <td>25</td>
-                            <td>66</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane fade" id="liga-inggris" role="tabpanel" aria-labelledby="liga-inggris-tab">
-                <h3 class="text-center" id="team-name">Liga Inggris</h3>
-                <p id="team-info">Klasemen Liga Inggris</p>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Posisi</th>
-                            <th>Nama Klub</th>
-                            <th>Jumlah Pertandingan</th>
-                            <th>Menang</th>
-                            <th>Seri</th>
-                            <th>Kalah</th>
-                            <th>Selisih Gol</th>
-                            <th>Poin</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Manchester City</td>
-                            <td>28</td>
-                            <td>18</td>
-                            <td>7</td>
-                            <td>3</td>
-                            <td>30</td>
-                            <td>61</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane fade" id="liga-jerman" role="tabpanel" aria-labelledby="liga-jerman-tab">
-                <h3 class="text-center" id="team-name">Liga Jerman</h3>
-                <p id="team-info">Klasemen Liga Jerman</p>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Posisi</th>
-                            <th>Nama Klub</th>
-                            <th>Jumlah Pertandingan</th>
-                            <th>Menang</th>
-                            <th>Seri</th>
-                            <th>Kalah</th>
-                            <th>Selisih Gol</th>
-                            <th>Poin</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Bayern Munich</td>
-                            <td>26</td>
-                            <td>17</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>28</td>
-                            <td>56</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <button class="btn btn-primary" onclick="window.history.back()">Kembali</button>
+  <!-- Tab Content -->
+  <div class="tab-content mt-3" id="ligaTabsContent">
+    
+    <!-- Liga Template (gunakan kembali dengan data berbeda) -->
+    <div class="tab-pane fade show active" id="liga-nasional" role="tabpanel">
+      <h3 class="text-center team-name">Liga Nasional</h3>
+      <p class="text-center team-info">Klasemen Liga Nasional</p>
+      <div class="table-container">
+        <table class="table table-bordered">
+          <thead><tr><th>Posisi</th><th>Nama Klub</th><th>Jumlah Pertandingan</th><th>Menang</th><th>Seri</th><th>Kalah</th><th>Selisih Gol</th><th>Poin</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>PERSIB Bandung</td><td>27</td><td>16</td><td>9</td><td>2</td><td>23</td><td>57</td></tr>
+            <tr><td>2</td><td>Arema FC</td><td>27</td><td>15</td><td>8</td><td>4</td><td>20</td><td>53</td></tr>
+            <tr><td>3</td><td>Persebaya Surabaya</td><td>27</td><td>14</td><td>9</td><td>4</td><td>18</td><td>51</td></tr>
+            <tr><td>4</td><td>PSS Sleman</td><td>27</td><td>13</td><td>7</td><td>7</td><td>15</td><td>46</td></tr>
+            <tr><td>5</td><td>Persija Jakarta</td><td>27</td><td>12</td><td>8</td><td>7</td><td>12</td><td>44</td></tr>
+            <tr><td>6</td><td>PSM Makassar</td><td>27</td><td>11</td><td>9</td><td>7</td><td>10</td><td>42</td></tr>
+            <tr><td>7</td><td>Persita Tangerang</td><td>27</td><td>10</td><td>10</td><td>7</td><td>8</td><td>40</td></tr>
+            <tr><td>8</td><td>Borneo FC</td><td>27</td><td>9</td><td>8</td><td>10</td><td>5</td><td>35</td></tr>
+            <tr><td>9</td><td>Persik Kediri</td><td>27</td><td>8</td><td>7</td><td>12</td><td>3</td><td>31</td></tr>
+            <tr><td>10</td><td>PSIS Semarang</td><td>27</td><td>7</td><td>8</td><td>12</td><td>-2</td><td>29</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
+    <!-- Ulangi div tab-pane dengan konten untuk liga lainnya sesuai struktur di atas -->
+
+    <!-- Liga Italia -->
+    <div class="tab-pane fade" id="liga-italia" role="tabpanel">
+      <h3 class="text-center team-name">Liga Italia</h3>
+      <p class="text-center team-info">Klasemen Liga Italia</p>
+      <div class="table-container">
+        <table class="table table-bordered">
+          <thead><tr><th>Posisi</th><th>Nama Klub</th><th>Jumlah Pertandingan</th><th>Menang</th><th>Seri</th><th>Kalah</th><th>Selisih Gol</th><th>Poin</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Inter Milan</td><td>30</td><td>20</td><td>6</td><td>4</td><td>25</td><td>66</td></tr>
+            <tr><td>2</td><td>AC Milan</td><td>30</td><td>19</td><td>7</td><td>4</td><td>22</td><td>64</td></tr>
+            <tr><td>3</td><td>Juventus</td><td>30</td><td>18</td><td>8</td><td>4</td><td>20</td><td>62</td></tr>
+            <tr><td>4</td><td>Roma</td><td>30</td><td>16</td><td>9</td><td>5</td><td>18</td><td>57</td></tr>
+            <tr><td>5</td><td>Napoli</td><td>30</td><td>15</td><td>8</td><td>7</td><td>15</td><td>53</td></tr>
+            <tr><td>6</td><td>Lazio</td><td>30</td><td>14</td><td>7</td><td>9</td><td>10</td><td>49</td></tr>
+            <tr><td>7</td><td>Atalanta</td><td>30</td><td>13</td><td>9</td><td>8</td><td>8</td><td>48</td></tr>
+            <tr><td>8</td><td>Fiorentina</td><td>30</td><td>12</td><td>10</td><td>8</td><td>5</td><td>46</td></tr>
+            <tr><td>9</td><td>Sassuolo</td><td>30</td><td>10</td><td>7</td><td>13</td><td>-2</td><td>37</td></tr>
+            <tr><td>10</td><td>Bologna</td><td>30</td><td>8</td><td>9</td><td>13</td><td>-5</td><td>33</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Spanyol -->
+    <div class="tab-pane fade" id="liga-spanyol" role="tabpanel">
+      <h3 class="text-center team-name">Liga Spanyol</h3>
+      <p class="text-center team-info">Klasemen Liga Spanyol</p>
+      <div class="table-container">
+        <table class="table table-bordered">
+          <thead><tr><th>Posisi</th><th>Nama Klub</th><th>Jumlah Pertandingan</th><th>Menang</th><th>Seri</th><th>Kalah</th><th>Selisih Gol</th><th>Poin</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Inter Milan</td><td>30</td><td>20</td><td>6</td><td>4</td><td>25</td><td>66</td></tr>
+            <tr><td>2</td><td>AC Milan</td><td>30</td><td>19</td><td>7</td><td>4</td><td>22</td><td>64</td></tr>
+            <tr><td>3</td><td>Juventus</td><td>30</td><td>18</td><td>8</td><td>4</td><td>20</td><td>62</td></tr>
+            <tr><td>4</td><td>Roma</td><td>30</td><td>16</td><td>9</td><td>5</td><td>18</td><td>57</td></tr>
+            <tr><td>5</td><td>Napoli</td><td>30</td><td>15</td><td>8</td><td>7</td><td>15</td><td>53</td></tr>
+            <tr><td>6</td><td>Lazio</td><td>30</td><td>14</td><td>7</td><td>9</td><td>10</td><td>49</td></tr>
+            <tr><td>7</td><td>Atalanta</td><td>30</td><td>13</td><td>9</td><td>8</td><td>8</td><td>48</td></tr>
+            <tr><td>8</td><td>Fiorentina</td><td>30</td><td>12</td><td>10</td><td>8</td><td>5</td><td>46</td></tr>
+            <tr><td>9</td><td>Sassuolo</td><td>30</td><td>10</td><td>7</td><td>13</td><td>-2</td><td>37</td></tr>
+            <tr><td>10</td><td>Bologna</td><td>30</td><td>8</td><td>9</td><td>13</td><td>-5</td><td>33</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Liga Inggris -->
+    <div class="tab-pane fade" id="liga-inggris" role="tabpanel">
+      <h3 class="text-center team-name">Liga Inggris</h3>
+      <p class="text-center team-info">Klasemen Liga Inggris</p>
+      <div class="table-container">
+        <table class="table table-bordered">
+          <thead><tr><th>Posisi</th><th>Nama Klub</th><th>Jumlah Pertandingan</th><th>Menang</th><th>Seri</th><th>Kalah</th><th>Selisih Gol</th><th>Poin</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Inter Milan</td><td>30</td><td>20</td><td>6</td><td>4</td><td>25</td><td>66</td></tr>
+            <tr><td>2</td><td>AC Milan</td><td>30</td><td>19</td><td>7</td><td>4</td><td>22</td><td>64</td></tr>
+            <tr><td>3</td><td>Juventus</td><td>30</td><td>18</td><td>8</td><td>4</td><td>20</td><td>62</td></tr>
+            <tr><td>4</td><td>Roma</td><td>30</td><td>16</td><td>9</td><td>5</td><td>18</td><td>57</td></tr>
+            <tr><td>5</td><td>Napoli</td><td>30</td><td>15</td><td>8</td><td>7</td><td>15</td><td>53</td></tr>
+            <tr><td>6</td><td>Lazio</td><td>30</td><td>14</td><td>7</td><td>9</td><td>10</td><td>49</td></tr>
+            <tr><td>7</td><td>Atalanta</td><td>30</td><td>13</td><td>9</td><td>8</td><td>8</td><td>48</td></tr>
+            <tr><td>8</td><td>Fiorentina</td><td>30</td><td>12</td><td>10</td><td>8</td><td>5</td><td>46</td></tr>
+            <tr><td>9</td><td>Sassuolo</td><td>30</td><td>10</td><td>7</td><td>13</td><td>-2</td><td>37</td></tr>
+            <tr><td>10</td><td>Bologna</td><td>30</td><td>8</td><td>9</td><td>13</td><td>-5</td><td>33</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Liga Jerman -->
+    <div class="tab-pane fade" id="liga-jerman" role="tabpanel">
+      <h3 class="text-center team-name">Liga Jerman</h3>
+      <p class="text-center team-info">Klasemen Liga Jerman</p>
+      <div class="table-container">
+        <table class="table table-bordered">
+          <thead><tr><th>Posisi</th><th>Nama Klub</th><th>Jumlah Pertandingan</th><th>Menang</th><th>Seri</th><th>Kalah</th><th>Selisih Gol</th><th>Poin</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Inter Milan</td><td>30</td><td>20</td><td>6</td><td>4</td><td>25</td><td>66</td></tr>
+            <tr><td>2</td><td>AC Milan</td><td>30</td><td>19</td><td>7</td><td>4</td><td>22</td><td>64</td></tr>
+            <tr><td>3</td><td>Juventus</td><td>30</td><td>18</td><td>8</td><td>4</td><td>20</td><td>62</td></tr>
+            <tr><td>4</td><td>Roma</td><td>30</td><td>16</td><td>9</td><td>5</td><td>18</td><td>57</td></tr>
+            <tr><td>5</td><td>Napoli</td><td>30</td><td>15</td><td>8</td><td>7</td><td>15</td><td>53</td></tr>
+            <tr><td>6</td><td>Lazio</td><td>30</td><td>14</td><td>7</td><td>9</td><td>10</td><td>49</td></tr>
+            <tr><td>7</td><td>Atalanta</td><td>30</td><td>13</td><td>9</td><td>8</td><td>8</td><td>48</td></tr>
+            <tr><td>8</td><td>Fiorentina</td><td>30</td><td>12</td><td>10</td><td>8</td><td>5</td><td>46</td></tr>
+            <tr><td>9</td><td>Sassuolo</td><td>30</td><td>10</td><td>7</td><td>13</td><td>-2</td><td>37</td></tr>
+            <tr><td>10</td><td>Bologna</td><td>30</td><td>8</td><td>9</td><td>13</td><td>-5</td><td>33</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tambahkan Liga Inggris, Jerman, dan Spanyol sesuai struktur di atas -->
+
+  </div>
+
+  <!-- Tombol Kembali -->
+  <button class="btn btn-primary" onclick="window.history.back()">Kembali</button>
+</div>
 
 </main>
 

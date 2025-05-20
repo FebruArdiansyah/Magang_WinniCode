@@ -1,42 +1,56 @@
 /* ========================= */
 /* NAVBAR STYLING */
 /* ========================= */
-.navbar-brand span { color: #525CEB; }
-.navbar-brand h1 { color: #FF66C4; }
-.navbar-brand { margin-left: 100px; }
+.navbar-brand span {
+    color: #1479FF;
+  }
 
-.nav-menu .nav-link {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 0.9rem;
-  color: #ccc;
-  position: relative;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  padding-left: 0.75rem;
+  .navbar-brand{
+    margin-left: 100px;
+  }
+
+  .nav-menu .nav-link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #ccc;
+    position: relative;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
+  }
+  
+  .nav-menu .nav-link:hover,
+  .nav-menu .nav-link.active {
+    color: #ffffff;
+  }
+  
+  .nav-menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #1479FF;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .nav-menu .nav-link:hover::after,
+  .nav-menu .nav-link.active::after {
+    width: 100%;
+  }
 
-.nav-menu .nav-link:hover,
-.nav-menu .nav-link.active { color: #fff; }
+  form[role="search"] input {
+    width: 100%;
+  }
 
-.nav-menu .nav-link::after {
-  content: '';
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition: width 0.3s ease;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-}
+  .form-control{
+    margin-right: 100px;
+  }
 
-.nav-menu .nav-link:hover::after,
-.nav-menu .nav-link.active::after { width: 100%; }
-
-form[role="search"] input { width: 100%; }
-.form-control { margin-right: 100px; }
 
 
 /* ========================= */
@@ -81,6 +95,11 @@ form[role="search"] input { width: 100%; }
 /* ========================= */
 /* LAYOUT UTAMA (Berita Utama) */
 /* ========================= */
+/* .layout-utama {
+  background-color: #0A0F2C;
+  color: #EEE;
+} */
+
 .layout-utama .card .card-img-top {
   height: 350px; /* Atur tinggi yang diinginkan */
   object-fit: cover;
@@ -88,7 +107,9 @@ form[role="search"] input { width: 100%; }
   border-top-right-radius: 0.5rem;
   overflow: hidden;
   margin-bottom: 0; /* Hindari jarak bawah gambar */
+  border-bottom: 2px solid #1479FF 
 }
+
 
 .layout-utama .card .card-body {
   border-top: none;
@@ -100,18 +121,36 @@ form[role="search"] input { width: 100%; }
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+  background-color: #121C3D;
+}
+
+.layout-utama .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* Judul lebih kecil */
 .layout-utama .card-title {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.badge.bg-dark {
+  background-color: #EC4899 !important;
+  color: #fff;
+  font-weight: 500;
 }
 
 /* Deskripsi lebih ramping */
 .layout-utama .card-body p,
 .layout-utama .card-body small {
   font-size: 0.85rem;
+   color: #BBB;
   line-height: 1.4;
 }
 
@@ -130,12 +169,27 @@ form[role="search"] input { width: 100%; }
 .layout-utama .btn-sm {
   padding: 4px 8px;
   font-size: 0.75rem;
+  
+}
+.layout-utama .btn-primary {
+ background-color: #1479FF;
+  border: none;
 }
 
-/* Spasi antar card */
-.layout-utama .card {
-  margin-bottom: 1rem;
+.layout-utama .btn-primary:hover {
+  background-color: #0E5FCC;
 }
+
+.layout-utama .btn-link {
+  color: #1479FF;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.layout-utama .btn-link:hover {
+  text-decoration: underline;
+}
+
 
 /* =============================== */
 /*    LAYOUT UTAMA RESPONSIVE      */
@@ -344,6 +398,27 @@ form[role="search"] input { width: 100%; }
 @keyframes fadeInAnimation {
   to { opacity: 1; }
 }
+
+footer {
+  background-color: #0A0F2C;
+  color: #ffffff;
+  }
+
+  footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  footer p, footer a {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ccc;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
 
 
 

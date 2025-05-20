@@ -1,10 +1,6 @@
 /* Navbar branding */
   .navbar-brand span {
-    color: #525CEB;
-  }
-
-  .navbar-brand h1{
-    color: #FF66C4;
+    color: #1479FF;
   }
 
   .navbar-brand{
@@ -25,7 +21,7 @@
   
   .nav-menu .nav-link:hover,
   .nav-menu .nav-link.active {
-    color: #fff;
+    color: #ffffff;
   }
   
   .nav-menu .nav-link::after {
@@ -33,7 +29,7 @@
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #fff;
+    background-color: #1479FF;
     transition: width 0.3s ease;
     position: absolute;
     bottom: -4px;
@@ -271,7 +267,7 @@
 
   .table-bordered th,
 .table-bordered td {
-  border: 2px solid #FFB800; /* Gold */
+  border: 2px solid #020200; /* Gold */
 }
 
 /* Hover efek */
@@ -446,6 +442,11 @@
 
   
   /* Footer */
+  footer {
+  background-color: #0A0F2C;
+  color: #ffffff;
+  }
+
   footer h5 {
     font-size: 16px;
     font-weight: bold;
